@@ -11,7 +11,7 @@ _テキスト_
 
 # 全体
 
--   [アドベントカレンダー](sofme/advent-calendar)
+-   [アドベントカレンダー](sofme/advent-calendar.html)
 
 # プログラム班
 
