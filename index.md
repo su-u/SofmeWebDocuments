@@ -9,6 +9,8 @@
 _テキスト_
 ```
 
+-   [注意点](point.html)
+
 # 全体
 
 -   [アドベントカレンダー](sofme/advent-calendar.html)
