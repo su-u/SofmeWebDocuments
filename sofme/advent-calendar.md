@@ -68,11 +68,13 @@
 1. md 形式の記事を html に変換する。
 1. 変換したものを所定の場所に張り付けする。
 
-```html
-<section class="probootstrap-section">
-    <div class="container"><div class="item">_ここに記事を入れる_</div></div>
-</section>
-```
+    ```html
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="item">_ここに記事を入れる_</div>
+        </div>
+    </section>
+    ```
 
 1. タイトルを書く。
 1. 担当者を書く。
@@ -109,12 +111,12 @@
 1. リンクを記事内に張り付ける。
 1. 以下の処理をする。
 
-```html
-<img src="_リンク_" alt="_画像説明_" class="img-responsive img-border" />
-```
+    ```html
+    <img src="_リンク_" alt="_画像説明_" class="img-responsive img-border" />
+    ```
 
--   クラスを追加する。
-    -   追加しないと、スマホで表示したときにデザインが崩れる。
--   `alt`属性に説明を書く。
+    - クラスを追加する。
+        - 追加しないと、スマホで表示したときにデザインが崩れる。
+    - `alt`属性に説明を書く。
 
 1. 問題なく描画されているか、確認する。
