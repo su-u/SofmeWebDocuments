@@ -6,6 +6,7 @@
     -   [アドベントカレンダーカレンダーリスト](#アドベントカレンダーカレンダーリスト)
     -   [アドベントカレンダーリスト全体](#アドベントカレンダーリスト全体)
     -   [アドベントカレンダー記事内画像](#アドベントカレンダー記事内画像)
+    -   [アドベントカレンダー記事作成](#アドベントカレンダー記事作成)
 
 <!-- /TOC -->
 
@@ -22,7 +23,7 @@
 
 -   `tr`タグの塊で 1 日分
 -   `title`のリンクには記事のページのリンクを貼るが、公開前にはリンクを消さなければならないので`javascripst:void(0)`をリンク先に指定し、リンクを消す。
--   `icon`が無い場合には、タグごと消しておく。
+-   `icon`が無い場合には、`img`タグごと消しておく。
 
 ## アドベントカレンダーリスト全体
 
@@ -69,3 +70,41 @@
 -   クラスを追加する。
     -   追加しないと、スマホで表示したときにデザインが崩れる。
 -   `alt`属性に説明を書く。
+
+## アドベントカレンダー記事作成
+
+1. md 形式の記事を提出してもらう。
+1. md 記法にミスなどがある場合は修正する。(知識が必要)
+1. md 形式の記事を html に変換する。
+1. 変換したものを所定の場所に張り付けする。
+
+```html
+<section class="probootstrap-section">
+    <div class="container"><div class="item">_ここに記事を入れる_</div></div>
+</section>
+```
+
+1. タイトルを書く。
+1. 担当者を書く。
+
+```html
+<section class="probootstrap-slider flexslider">
+    <ul class="slides">
+        <li style="background-image: url(/img/person_1.jpg);" class="overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div
+                            class="slides-text probootstrap-animate"
+                            data-animate-effect="fadeIn"
+                        >
+                            <h2>_記事タイトル_</h2>
+                            <p>_担当者_</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+```
