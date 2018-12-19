@@ -80,10 +80,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div
-                            class="slides-text probootstrap-animate"
-                            data-animate-effect="fadeIn"
-                        >
+                        <div class="slides-text probootstrap-animate" data-animate-effect="fadeIn">
                             <h2>_記事タイトル_</h2>
                             <p>_担当者_</p>
                         </div>
