@@ -22,11 +22,11 @@ _テキスト_
 ```
 
 -   [注意点](point.html)
--   [アップロード](upload).html)
+-   [アップロード](upload)
 
 # 全体
 
--   [アドベントカレンダー](sofme/advent-calendar.html)
+-   [アドベントカレンダー](sofme/advent-calendar)
 
 # プログラム班
 
