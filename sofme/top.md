@@ -9,8 +9,8 @@
     -   [ABOUT](#about)
         -   [ソフトメディア研究会とは](#ソフトメディア研究会とは)
         -   [活動内容について](#活動内容について)
-        -   [部長挨拶](#部長挨拶)
     -   [トピック](#トピック)
+    -   [以前あった要素](#以前あった要素)
 
 <!-- /TOC -->
 
@@ -69,40 +69,37 @@
 
 ### ソフトメディア研究会とは
 
+本研究会の概要だけ書いておく。
+
 ```html
 <h2 class="border">ソフトメディア研究会とは？</h2>
-<p>_説明_</p>
+<p>${説明}</p>
 ```
 
 ### 活動内容について
 
 ```html
 <h2 class="border">活動内容について</h2>
-<p>_説明_</p>
-```
-
-### 部長挨拶
-
-```html
-<h2 class="border">部長挨拶</h2>
-<p>_説明_</p>
+<p>${説明}</p>
 ```
 
 ## トピック
+
+ある程度の更新頻度を保つ。
 
 ```html
 <div class="col-md-4">
     <div class="probootstrap-card">
         <div class="probootstrap-card-media">
             <img
-                src="img/_画像_"
+                src="/img/${画像}"
                 class="img-responsive img-border"
-                alt="_画像の説明_"
+                alt="${画像の説明}"
             />
         </div>
         <div class="probootstrap-card-text">
-            <h2 class="probootstrap-card-heading mb0">_タイトル_</h2>
-            <p class="category">_活動日_</p>
+            <h2 class="probootstrap-card-heading mb0">${タイトル}</h2>
+            <p class="category">${活動日]</p>
         </div>
     </div>
 </div>
@@ -110,4 +107,9 @@
 
 -   画像サイズは`360x270`にする。
 -   画像サイズを変更する場合は、ほかの画像も同時に変更する。
--   `alt`属性を忘れずに
+-   画像の`alt`属性を忘れずに
+
+## 以前あった要素
+
+-   部長挨拶
+    挨拶のデータが来ない為削除
