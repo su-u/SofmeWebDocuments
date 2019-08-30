@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 -   [トップページ](#トップページ)
+    -   [スライドショー画像更新](#スライドショー画像更新)
     -   [メインメニュー](#メインメニュー)
     -   [イベント](#イベント)
         -   [アドベントカレンダーリンク](#アドベントカレンダーリンク)
@@ -10,9 +11,55 @@
         -   [ソフトメディア研究会とは](#ソフトメディア研究会とは)
         -   [活動内容について](#活動内容について)
     -   [トピック](#トピック)
+    -   [メジェドについて](#メジェドについて)
     -   [以前あった要素](#以前あった要素)
 
 <!-- /TOC -->
+
+## スライドショー画像更新
+
+トップにスライドショーがある。
+
+スライドショー全体
+
+```html
+<section class="probootstrap-slider flexslider">
+    <div id="slide" class="slider-pro">
+        <div class="sp-slides">
+            <div class="sp-slide">
+                <img
+                    class="sp-image"
+                    src="/img/2019_05_26_BunsaiHeader.jpg"
+                    alt="文祭ヘッダー画像 作:HarU"
+                />
+            </div>
+            <div class="sp-slide">
+                <img class="sp-image" src="/img/01.jpg" />
+            </div>
+            <div class="sp-slide">
+                <img class="sp-image" src="/img/02.jpg" />
+            </div>
+            <div class="sp-slide">
+                <img class="sp-image" src="/img/03.jpg" />
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+各要素は
+
+```html
+<div class="sp-slide">
+    <img class="sp-image" src="/img/03.jpg" />
+</div>
+```
+
+-   時間的にも、操作的にも、4、5 枚がベストだと思う。
+-   画像サイズが少々特殊なため、気を付ける。
+-   FullHD での表示で、スライドショーの下にある「メインメニュー」の各班の要素が見えるようにしたかったため、このサイズになっている。
+-   スライドショーには、`slider-pro`ライブラリを使用。[GitHub リンク](https://github.com/bqworks/slider-pro/)
+-   スライドショーの設定は、別途`/js/slider-pro/slider-pro.js`に記述してある。仕様については GitHub を参照する。
 
 ## メインメニュー
 
@@ -109,6 +156,13 @@
 -   画像サイズは`360x270`にする。
 -   画像サイズを変更する場合は、ほかの画像も同時に変更する。
 -   画像の`alt`属性を忘れずに
+
+## メジェドについて
+
+ソースコードの下部にあるメジェドの AA はネタ。
+特に深い意味はない。
+気になる人は、めじぇ走で検索。
+問題があれば消してしまっても構わない。
 
 ## 以前あった要素
 
