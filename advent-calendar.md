@@ -12,15 +12,15 @@
 
 ```html
 <tr>
-    <td class="date color">_日付_</td>
-    <td class="title"><a href="_javascript:void(0)_">_タイトル_</a></td>
-    <td class="icon"><img src="icon/_filename_" class="icon" /></td>
-    <td class="author">_担当者_</td>
+    <td class="date color">${日付}</td>
+    <td class="title"><a href="_${リンク}_">${タイトル}</a></td>
+    <td class="icon"><img src="icon/${アイコンファイル}" class="icon" /></td>
+    <td class="author">${担当者}</td>
 </tr>
 ```
 
 -   `tr`タグの塊で 1 日分
--   `title`のリンクには記事のページのリンクを貼るが、公開前にはリンクを消さなければならないので`javascripst:void(0)`をリンク先に指定し、リンクを消す。
+-   `title`のリンクには記事のページのリンクを貼るが、公開前にはリンクを消さなければならないので`href`要素を消しておく。
     -   `#`にするとページ上部に飛んでしまうため不可。しかし、2018 年度は公開日までタイトルを公開しなかった為、どちらでも問題無し。
 -   `icon`が無い場合には、`img`タグごと消しておく。
 
@@ -28,10 +28,10 @@
 
 -   `400x400`程度の画像(Twitter など)の画像を提出してもらう。
 -   画像に問題が無いか確認する。
--   `icon/_担当者画像名_`に画像を置く。
+-   `icon/${担当者画像名}`に画像を置く。
 -   以下の場所を変更する。
     ```html
-    <td class="icon"><img src="icon/_filename_" class="icon" /></td>
+    <td class="icon"><img src="icon/${アイコンファイル}" class="icon" /></td>
     ```
 -   画像が問題なく表示されているか確認する。
     **上下とズレている可能性があるのでよく見る。**
@@ -42,7 +42,7 @@
 <section class="probootstrap-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">_アドベントカレンダーの説明_</div>
+            <div class="col-md-12">${アドベントカレンダーの説明}</div>
         </div>
         <div class="row calendar-date">
             <table>
@@ -56,14 +56,17 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="date color">_日付_</td>
+                        <td class="date color">${日付}</td>
                         <td class="title">
-                            <a href="_リンク_">__記事タイトル</a>
+                            <a href="${ページへのリンク}">${記事タイトル}</a>
                         </td>
                         <td class="icon">
-                            <img src="icon/_アイコンファイル名_" class="icon" />
+                            <img
+                                src="icon/${アイコンファイル名}"
+                                class="icon"
+                            />
                         </td>
-                        <td class="author">_担当者</td>
+                        <td class="author">${担当者}</td>
                     </tr>
                 </tbody>
             </table>
@@ -84,7 +87,7 @@
     ```html
     <section class="probootstrap-section">
         <div class="container">
-            <div class="item">_ここに記事を入れる_</div>
+            <div class="item">${ここに記事を入れる}</div>
         </div>
     </section>
     ```
@@ -104,8 +107,8 @@
                             class="slides-text probootstrap-animate"
                             data-animate-effect="fadeIn"
                         >
-                            <h2>_記事タイトル_</h2>
-                            <p>_担当者_</p>
+                            <h2>${記事タイトル}</h2>
+                            <p>{担当者}</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +129,7 @@
 1. 以下の処理をする。
 
     ```html
-    <img src="_リンク_" alt="_画像説明_" class="img-responsive" />
+    <img src="${画像リンク}" alt="${画像説明}" class="img-responsive" />
     ```
 
     - クラスを追加する。
