@@ -15,7 +15,7 @@
             <h3 class="panel-title">${年度}</h3>
         </div>
         <div class="panel-body">
-            ${リスト}
+            ${講座リスト}
         </div>
     </div>
 </div>
@@ -48,7 +48,7 @@
                     <h3 class="panel-title">${年度}</h3>
                 </div>
                 <div class="panel-body">
-                    ${リスト}
+                    ${講座リスト}
                 </div>
             </div>
         </div>
