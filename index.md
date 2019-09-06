@@ -70,6 +70,6 @@ ${テキスト}
 
 # イベント
 
--   [アドベントカレンダー](event/advent-calendar)
--   [文化の祭典](event/bunkan)
--   [津田沼祭](event/tsudanumasai)
+-   [アドベントカレンダー](events/advent-calendar)
+-   [文化の祭典](events/bunkan)
+-   [津田沼祭](events/tsudanumasai)
